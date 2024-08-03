@@ -2,3 +2,18 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --background-image: url(../images/cover-image-dark.png);
+  --background-color: #000028;
+  --main-font: "IBM Plex Mono", sans-serif;
+  --accent-color: #ff0070;
+  --text-color-content-title: #000028;
+  --text-color-content: #F1B2CE;
+  --title-color: #DB00FF;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-size-title: 116px;
+  --font-size-content: 18px;
+  --gap-small: 10px;
+  --gap-medium: 20px;
+}
