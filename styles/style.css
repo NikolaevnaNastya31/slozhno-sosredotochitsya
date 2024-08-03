@@ -9,6 +9,7 @@
   background-attachment: fixed;
   object-fit: cover;
   color: var(--text-color-content, #f1b2ce);
+  line-height: 23.4px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -31,11 +32,7 @@
 
 .decorated-zone {
   padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  position: relative;
-}
-
-.decorated-zone {
-  position: relative;
+  position: relative;  
 }
 
 .decorated-zone::before {

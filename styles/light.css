@@ -89,8 +89,7 @@
   pointer-events: none;
 }
 
-.page.theme_light .header__theme-menu-button:disabled
- {
+.page.theme_light .header__theme-menu-button:disabled {
   --accent-color: #353430;
   border: 0;
   outline: 1px solid var(--accent-color, #353430);
