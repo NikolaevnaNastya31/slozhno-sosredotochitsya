@@ -11,8 +11,10 @@
   --main-font: "IBM Plex Mono", sans-serif;
   --accent-color: #ff8dcb;
   --text-color-content-title: #353430;
+  --btn-color-hover:#32312D66;
   --text-color-content: #353430;
   --title-color: #ffc2e6;
+  --btn-color-hover: #32312D66;
 }
 
 .page.theme_light {
@@ -27,6 +29,7 @@
   --text-color-content-title: #353430;
   --text-color-content: #353430;
   --title-color: #ffc2e6;
+  --btn-color-hover: #32312D66;
 }
 
 /* Остальные стили */
@@ -39,13 +42,13 @@
     --accent-color: #ff8dcb;
     --text-color-content-title: #353430;
     --text-color-content: #353430;
-    --title-color: #ffc2e6;
+    --title-color: #353430;
+    --btn-color-hover: #32312D66;
   }
 }
 
 .page.theme_light .header__title {
   --accent-color:  #ff0070;
-  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
 .page.theme_light .decorated-zone-rec {
@@ -54,53 +57,40 @@
 
 .page.theme_light .decorated-zone::before {
   --accent-color: #353430;
-  border-block-end: 1px solid var(--accent-color, #353430);
-  border-inline-start: 1px solid var(--accent-color, #353430);
 }
 
 .page.theme_light .decorated-zone::after {
   --accent-color: #353430;
-  border-block-start: 1px solid var(--accent-color, #353430);
-  border-inline-end: 1px solid var(--accent-color, #353430);
 }
 
 .page.theme_light .content__title {
   --accent-color: #353430;
-  color: var(--accent-color, #353430);
 }
 
 .page.theme_light .header__theme-menu-button {
   --accent-color: #353430;
-  color: var(--accent-color, #353430);
 }
 
 .page.theme_light  .header__theme-menu-button:focus-visible {
   --accent-color: #353430;
-  border-inline-end: 1px solid var(--accent-color, #353430);
 }
 
 .page.theme_light  .header__theme-menu-button:hover {
-  --accent-color: #353430;
-  outline: 1px solid var(--accent-color, #353430);
-  cursor: pointer;
-}
-
-.page.theme_light .header__theme-menu-button_active {
-  pointer-events: none;
+  --btn-color-hover: #32312D66;
 }
 
 .page.theme_light .header__theme-menu-button:disabled {
   --accent-color: #353430;
-  border: 0;
-  outline: 1px solid var(--accent-color, #353430);
 }
 
 .page.theme_light:any-link {
   --accent-color: #ff8dcb;
-  text-shadow: 1px 1px 0 var(--accent-color, #ff8dcb);
+}
+
+.page.theme_light .rebuilding-right {
+  --accent-color:#ff8dcb;
 }
 
 .page.theme_light .footer__title {
   --accent-color: #ff0070;
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
