@@ -159,7 +159,7 @@
 }
 
 .content__title {
-  color: var(--color-accent-title,#ff0070);
+  color: var(--color-accent-title, #ff0070);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-content);
 }
