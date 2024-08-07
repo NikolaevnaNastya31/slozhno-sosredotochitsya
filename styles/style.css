@@ -8,13 +8,14 @@
   background-size: cover;
   background-attachment: fixed;
   object-fit: cover;
-  color: var(--text-color-content, #f1b2ce);
+  color: var(--main-color-text, #f1b2ce);
   line-height: 23.4px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 .header {
   height: 100vh;
+  min-block-size: 668px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
 }
@@ -114,7 +115,7 @@
   inline-size: 9px;
   border-radius: 50%;
   background-color: var(--accent-color, #ff0070);
-  box-shadow: 0px 0px 4px 2px var(--accent-color, #ff0070);
+  box-shadow: 0px 0px 4px 2px var(--shadow-color, #ff0070);
   align-self: center;
 }
 
@@ -126,7 +127,7 @@
 }
 
 .header__title {
-  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+  text-shadow: 4px 4px 0 var(--shadow-color, #ff0070);
 }
 
 .header__text {
@@ -139,8 +140,8 @@
 }
 
 .title-decor {
-  background-color: var(--accent-color, #ff0070);
-  color: var(--text-color-content-title, #000028);
+  background-color: var(--decor-accent-color, #ff0070);
+  color: var(--color-content-title, #000028);
   font-weight: var(--font-weight-bold);
 }
 
@@ -158,19 +159,18 @@
 }
 
 .content__title {
-  color: var(--accent-color, #ff0070);
+  color: var(--color-accent-title,#ff0070);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-content);
-  line-height: var(--line-height);
 }
 
 .content__title:is(.rebuilding-right) {
-  color: var(--text-color-content-title, #000028);
+  color: var(--color-content-title, #000028);
 }
 
 .subtitle {
   font-size: var(--font-size-content);
-  color: var(--text-color-content-title, #000028);
+  color: var(--color-content-title, #000028);
 }
 
 .content__card-list {
@@ -210,16 +210,16 @@
 }
 
 :any-link {
-  text-shadow: 1px 1px 0 var(--accent-color, #ff0070);
+  text-shadow: 1px 1px 0 var(--shadow-color-link, #ff0070);
 }
 
 .link:hover {
-  border-bottom: 1px solid var(--text-color-content, #f1b2ce);
+  border-bottom: 1px solid var(--main-color-text, #f1b2ce);
   margin-bottom: 2px;
 }
 
 .link:focus {
-  outline: solid 1px var(--text-color-content, #f1b2ce);
+  outline: solid 1px var(--main-color-text, #f1b2ce);
   outline-offset: -2.3px;
   border: transparent;
 }
@@ -228,6 +228,7 @@
 
 .footer {
   height: 100vh;
+  min-block-size: 668px;
   position: relative;
   display: grid;
   margin-block-start: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
@@ -236,7 +237,7 @@
 .footer__title {
   justify-self: center;
   align-self: center;
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+  text-shadow: 2px 2px 0 var(--shadow-color, #ff0070);
 }
 
 /* МЕДИА ЗАПРОСЫ */

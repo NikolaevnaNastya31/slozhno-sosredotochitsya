@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: var(--main-font);
+  font-family: var(--main-font-famili);
   font-size: var( --font-size-content);
   font-weight: var(--font-weight-normal);
   min-inline-size: 375px;
